@@ -3,31 +3,31 @@ import { createContext, useState, useContext, useEffect, ReactNode } from 'react
 import { AuthState, User } from '@/types';
 import { toast } from 'sonner';
 
-// Mock data for now - will be replaced with Supabase integration
+// Enhanced mock users for comprehensive testing
 const MOCK_USERS = [
   {
     id: '1',
-    name: 'Student User',
+    name: 'Emma Johnson',
     email: 'student@example.com',
     password: 'password123',
     role: 'student' as const,
-    profileImage: 'https://ui-avatars.com/api/?name=Student+User&background=6366f1&color=fff'
+    profileImage: 'https://ui-avatars.com/api/?name=Emma+Johnson&background=6366f1&color=fff'
   },
   {
     id: '2',
-    name: 'Teacher User',
+    name: 'Alex Rodriguez',
     email: 'teacher@example.com',
     password: 'password123',
     role: 'teacher' as const,
-    profileImage: 'https://ui-avatars.com/api/?name=Teacher+User&background=8b5cf6&color=fff'
+    profileImage: 'https://ui-avatars.com/api/?name=Alex+Rodriguez&background=8b5cf6&color=fff'
   },
   {
     id: '3',
-    name: 'Manager User',
+    name: 'Sarah Williams',
     email: 'manager@example.com',
     password: 'password123',
     role: 'manager' as const,
-    profileImage: 'https://ui-avatars.com/api/?name=Manager+User&background=ec4899&color=fff'
+    profileImage: 'https://ui-avatars.com/api/?name=Sarah+Williams&background=ec4899&color=fff'
   }
 ];
 
