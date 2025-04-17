@@ -40,11 +40,17 @@ const DatabaseTables = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {tables.map((tableName) => (
-              <TableRow key={tableName}>
-                <TableCell>{tableName}</TableCell>
+            {tables.length === 0 ? (
+              <TableRow>
+                <TableCell className="text-center py-4 text-muted-foreground">No tables found in database</TableCell>
               </TableRow>
-            ))}
+            ) : (
+              tables.map((tableName, index) => (
+                <TableRow key={index}>
+                  <TableCell>{tableName}</TableCell>
+                </TableRow>
+              ))
+            )}
           </TableBody>
         </Table>
       </div>

@@ -18,6 +18,7 @@ import Profile from "./pages/Profile";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
 import NotFound from "./pages/NotFound";
+import DatabaseTables from "./pages/DatabaseTables";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/forgot-password" element={<ForgotPassword />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/course/:courseId" element={<CourseDetail />} />
+              <Route path="/database-tables" element={<DatabaseTables />} />
               
               {/* Protected Routes */}
               <Route 
